@@ -1,0 +1,94 @@
+<div style="padding-top:100px;"> 
+    <div>
+        <h1 class="text-primary text-center mt-3 position-sticky">Medical Profile</h1>
+
+    </div>
+<form class="container mt-3" #profileform="ngForm" (ngSubmit)="saveProfile(profileform.value)">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Kruskal" ngModel name="firstname">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Shah" ngModel name="lastname">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="emergencycont">Emergency Contact</label>
+        <input type="text" class="form-control" id="emergencycont" placeholder="Dr. Raman Patel : +91 9228601011" ngModel name="emergencycont">
+        <small class="form-text text-muted">
+            Put contact details of the person to contact in case of emergency.
+        </small>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="height">Height</label>
+            <input type="text" class="form-control" id="height" placeholder="5.4" ngModel name="height">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="weight">Weight</label>
+            <input type="number" class="form-control" id="weight" placeholder="62" ngModel name="weight">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="bloodgroup">Blood Group</label>
+            <select class="form-control" id="bloodgroup" ngModel name="bloodgroup">
+                <option aria-readonly="true">Select A Blood Group</option>
+                <option>A +ve</option>
+                <option>A -ve</option>
+                <option>B +ve</option>
+                <option>B -ve</option>
+                <option>AB +ve</option>
+                <option>AB -ve</option>
+                <option>O +ve</option>
+                <option>O -ve</option>
+                <option>Rh +ve</option>
+                <option>Rh -ve</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="allergicinfo">Allergic Info</label>
+            <input type="text" class="form-control" id="allergicinfo" placeholder="Peanuts, Soya" ngModel name="allergicinfo">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="chronicdiseases">Chronic Diseases</label>
+        <input type="text" class="form-control" id="chronicdiseases" placeholder="Diabetes" ngModel name="chronicdiseases">
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="lastwishes">Last Wishes</label>
+            <input type="text" class="form-control" id="lastwishes" placeholder="Donate My Wealth" ngModel name="lastwishes">
+            <small class="form-text text-muted">
+                Put anything that you want to share after your death. Not visible to everyone.
+            </small>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="other">Other</label>
+            <input type="text" class="form-control" id="other" placeholder="I had two small moles behind my right ear." ngModel name="other">
+            <small class="form-text text-muted">
+                anything else that you want to share.
+            </small>
+        </div>
+    </div>
+        
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="agree">
+            <label class="form-check-label" for="agree">
+                I agree to submit this details.
+            </label>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+</div>
+

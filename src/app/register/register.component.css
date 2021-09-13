@@ -1,0 +1,40 @@
+.gradient-color{
+    background:#18b9ce; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#18b9ce, #0083B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#18b9ce, #0083B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+.card{
+    width:85%;
+    margin:auto;
+    margin-top:10%;
+    margin-bottom:10% ;
+    color:#ffffff;
+    border-radius: 5px;
+    height:auto;
+    -webkit-box-shadow: 0px 3px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 25px -6px rgba(0,0,0,0.75);
+    position: relative;
+
+}
+
+.card-gradient
+{
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                position: relative;
+
+}
+.container1{
+height: 100%;
+width:100%;
+display:block;
+position: relative;
+}
+
+.panel{
+    margin-bottom: 10%;
+    display:none;
+}

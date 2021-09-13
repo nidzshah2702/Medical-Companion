@@ -1,0 +1,38 @@
+<div class=" fluid-container content-wrapper p-3">
+	<h1 class="text-primary text-center">My Reports</h1>
+	
+	<div class="container card p-4 mt-4 ">
+		<div class="reportadd">
+                <div class="col col-md-2">
+                        <button type="button" (click)="refresh()" class="btn btn-primary">Refresh <i class="fa fa-refresh" title="upload report"></i></button>
+                      </div>
+			<form>
+				<div class="form-row justify-content-center">
+                	<label class="col-md-2 pt-1">Add new report</label>
+					<div class="col col-md-4 mr-2 custom-file">
+						<input type="file" class="custom-file-input" (change)="fileChangeEvent($event)" placeholder="Upload your Medical Report" id="customFile">
+						<label class="custom-file-label" for="customFile">Upload your Medical Report</label>
+					</div>
+					<div class="col col-md-2">
+				      <button type="button" (click)="upload()" class="btn btn-primary">Upload  <i class="fa fa-upload" title="upload report"></i></button>
+				    </div>
+				</div>
+			</form>
+           
+		
+		</div>
+
+		<div class="divider mt-3 mb-4"></div>
+
+		<div class="reportslist">
+			<div class="report" *ngFor="let item of reports; let i = index">
+				<div class="row  justify-content-center">
+					<div class="col-md-5 mt-1 reportname">{{item.reportname}}</div>
+					<button type="button" class="btn btn-primary col-md-1 reportdownload mx-1 text-white" (click)="download(i)"><i class="fa fa-download" title="download report"></i></button>
+					<button type="button" class="btn btn-danger col-md-1 reportdelete mx-1 text-white"  (click)="delete(i)"><i class="fa fa-trash" title="delete report"></i></button> 
+				</div>
+				<div class="report-seprator mx-auto col-md-8 d-block my-2"></div>
+			</div>
+		</div>
+	</div>
+</div>

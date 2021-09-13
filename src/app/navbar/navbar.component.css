@@ -1,0 +1,20 @@
+navbar .navbar-toggler .icon-bar {
+    background: black !important;
+  
+  }
+  nav{
+  
+  background:#fff ; 
+  color: #18b9ce;
+  
+  }
+  .navs a{
+  
+      font-size:20px;
+    color: #18b9ce;
+ 
+  }
+
+  #logout,#dashboard{
+    display: none;
+  }

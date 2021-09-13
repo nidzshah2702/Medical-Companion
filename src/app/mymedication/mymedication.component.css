@@ -1,0 +1,41 @@
+.backgroundimg1{
+    background-color: rgba(100,100,100,0.1);    
+}
+.pill-tile{
+    background: #fff;
+    box-shadow: 0 1px  0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    transition-property: box-shadow;
+    transition-duration: .2s;
+    width: 30%;
+    margin: 20px;
+}
+
+.pill-tile:hover{
+    box-shadow:  0 10px 30px rgba(0,0,0,0.2);
+}
+
+.pill-container{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.pill-body{
+    color: #666;
+}
+
+.pill-time{
+    float:right;
+    color: #1a2849;
+}
+
+.pill-body p{
+    margin:0px;
+}
+
+.pill-header{
+    padding-bottom: 20px;
+    color:#1a2849;
+}

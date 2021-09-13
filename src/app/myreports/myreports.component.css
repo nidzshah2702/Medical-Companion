@@ -1,0 +1,15 @@
+
+
+.content-wrapper{
+    background-image: url("/assets/profile-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divider{
+border-bottom: 2px solid #efefef;
+}
+
+.report-seprator{
+border-bottom: 2px solid #efefef;
+}

@@ -1,0 +1,27 @@
+<div class=" fluid-container profile-wrapper p-3">
+        <h1 class="text-primary text-center">Medical Profile</h1>
+        <div class="container card p-4 mt-4 mb-4 profile">
+            <div class="profile-head row d-flex">
+                <div class="col col-md-2">
+                    <div class="w-75 justify-content-center text-center">
+                        <img class="img img-responsive image-fluid pb-4 pr-4 pl-4 pt-2" src="assets/user.svg">
+                    </div>
+                </div>
+                <div class="col col-md-6 float-right ml-4">
+                    <h4 class="display-3">{{profile.firstName}} {{profile.lastName}}</h4>   	
+                       <p class="display-4 profile-heightweight"><strong> {{profile.bloodgroup}} | {{profile.height}} Feet | {{profile.weight}} Kgs </strong></p>	   	
+                </div>
+            </div>
+            <div class="profile-body px-4">
+                <p> <strong>Emergency Contact :</strong> {{profile.emergencycont}} </p>
+                
+                <p> <strong>Chronic Diseases :</strong> {{profile.chronicdiseases}} </p>
+                <p> <strong>Allergic Info :</strong> {{profile.allergicinfo}} </p>
+                <p> <strong>Chronic Diseases :</strong> {{profile.chronicdiseases}} </p>
+    
+                <p> <strong>Other Info :</strong> {{profile.other}}</p>
+                
+                <a class="btn btn-primary text-center" (click)="goto()">Update Profile</a>
+            </div>	
+        </div>
+    </div>

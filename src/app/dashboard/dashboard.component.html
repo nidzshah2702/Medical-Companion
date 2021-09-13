@@ -1,0 +1,60 @@
+
+  
+<div class="backgroundimg1 gradient-color fluid-container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
+        </ol>
+    </nav>
+
+    <div class="user-welcome" style="padding-bottom: 15px; margin-left:20px;margin-right:45px;border-bottom:2px solid rgba(100,100,100,.15)" class="mb-3">
+        <h2 class="d-inline">Hello Champ, {{username}}</h2>
+<!--         <button class="btn btn-success d-inline float-right"><b>+</b> Add New</button>
+ --> </div>
+
+    <div class="alert alert-info alert-dismissible fade show container" role="alert">
+        <strong>Today's Health Goal: </strong> Do 20 Push-ups.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="fluid-container mb-4 mt-4 pb-4" id="dashboard-panel">
+        <div class="row card-deck justify-content-center p-3">
+            <div class="col-md-3 card dropshadow">
+                <div class="card-body">
+                    <div class=""><img src="assets/medications.svg" class="card-img-top mt-3 mb-3 w-25" alt="user" width="40px"></div>
+                    <h3 class="card-title display-4 text-primary">Medication</h3>
+                    <p class="card-text ">Keep track of your daily medications schedule with ease.</p>
+                    <div class="">
+                        <a (click)="goto('mymedication')" class="btn btn-primary">Go To My Medications</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card dropshadow">
+                <div class="card-body justify-content-center">
+                    
+                    <div><img src="assets/reports.svg" class="card-img-top mt-3 mb-3 w-25" alt="user" width="40px"></div>
+                    <h5 class="card-title display-4 text-primary">Reports</h5>
+                    <p class="card-text ">Medicals reports securely stored on a accessible platform.</p>
+                    <div class="">
+                        <a (click)="goto('myreports')" class="btn btn-primary">Go To My Reports</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 card dropshadow">
+                <div class="card-body justify-content-center">
+                    
+                    <div ><img src="assets/user.svg" class="card-img-top mt-3 mb-3 w-25" alt="user" width="40px"></div>
+                    <h5 class="card-title display-4 text-primary">Profile</h5>
+                    <p class="card-text ">Access your medical profile from a single platform.</p>
+                    <div class="">
+                        <a (click)="goto('myprofile')" class="btn btn-primary">Go To My Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>

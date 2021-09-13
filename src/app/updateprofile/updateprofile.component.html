@@ -1,0 +1,94 @@
+<div style="padding-top:100px;"> 
+    <div>
+        <h1 class="text-primary text-center mt-3 position-sticky">Medical Profile</h1>
+
+    </div>
+<form class="container mt-3" #profileform="ngForm" (ngSubmit)="updateProfile(profileform.value)">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control"  id="firstname" value={{profile.firstName}} ngModel name="firstname">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname"  value={{profile.lastName}} ngModel name="lastname">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="emergencycont">Emergency Contact</label>
+        <input type="text" class="form-control" id="emergencycont"  value={{profile.emergencycont}} ngModel name="emergencycont">
+        <small class="form-text text-muted">
+            Put contact details of the person to contact in case of emergency.
+        </small>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="height">Height</label>
+            <input type="text" class="form-control" id="height"  value={{profile.height}} ngModel name="height">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="weight">Weight</label>
+            <input type="number" class="form-control" id="weight"  value={{profile.weight}} ngModel name="weight">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="bloodgroup">Blood Group</label>
+            <select class="form-control" id="bloodgroup"  value={{profile.bloodgroup}} ngModel name="bloodgroup">
+                <option aria-readonly="true">Select A Blood Group</option>
+                <option>A +ve</option>
+                <option>A -ve</option>
+                <option>B +ve</option>
+                <option>B -ve</option>
+                <option>AB +ve</option>
+                <option>AB -ve</option>
+                <option>O +ve</option>
+                <option>O -ve</option>
+                <option>Rh +ve</option>
+                <option>Rh -ve</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="allergicinfo">Allergic Info</label>
+            <input type="text" class="form-control" id="allergicinfo"  value={{profile.allergicinfo}} ngModel name="allergicinfo">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="chronicdiseases">Chronic Diseases</label>
+        <input type="text" class="form-control" id="chronicdiseases"  value={{profile.chronicdiseases}} ngModel name="chronicdiseases">
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="lastwishes">Last Wishes</label>
+            <input type="text" class="form-control" id="lastwishes"  value={{profile.lastwishes}} ngModel name="lastwishes">
+            <small class="form-text text-muted">
+                Put anything that you want to share after your death. Not visible to everyone.
+            </small>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="other">Other</label>
+            <input type="text" class="form-control" id="other"  value={{profile.other}} ngModel name="other">
+            <small class="form-text text-muted">
+                anything else that you want to share.
+            </small>
+        </div>
+    </div>
+        
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="agree">
+            <label class="form-check-label" for="agree">
+                I agree to submit this details.
+            </label>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+</div>
+

@@ -1,0 +1,18 @@
+profile-wrapper{
+    background-image: url("/assets/profile-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile{
+border-radius: 15px;
+}
+
+.profile-heightweight{
+font-size:1.5em;
+}
+
+.divider{
+width: 40%;
+border-bottom: 2px solid red;
+}

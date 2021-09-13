@@ -1,0 +1,37 @@
+<div class="backgroundimg1" style="padding-top: 100px;">
+     
+      <div class="user-welcome" style="padding-bottom: 15px; margin-left:20px;margin-right:45px;border-bottom:2px solid rgba(100,100,100,.15)" class="mb-3">
+            <h2 class="d-inline">Today's Medications</h2>
+            <button class="btn btn-success d-inline float-right" (click)="goto()"><b>+</b> Add New</button>
+        </div>
+  
+      <div class="fluid-container justify-content-center">
+          <div class="pill-container row">
+              <div class="pill-tile" *ngFor="let med of mymedications;">
+                  <div class="pill-header">
+                      <h3 class="d-inline text-left">{{med.pillname}}</h3>
+                      <h4 class="d-inline text-right pill-time" >{{med.time}}</h4>
+                  </div>
+                  <div class="pill-body">
+                        <p> {{med.description}} </p>
+                        <p> {{med.startDate}} - {{med.endDate}} </p>
+                    </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- chanllenge toast
+          <div class="toast">
+              <div class="toast-header">
+                  <strong class="mr-auto">Chase it {{user.user_name}}</strong>
+                  <button type="button" class="close" data-dismiss="toast">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="toast-body">
+                  Take all medicine time to time, and get 200 health points.
+              </div>
+          </div> -->
+  
+      
+  </div>
